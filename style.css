@@ -1,0 +1,152 @@
+/* https://media.giphy.com/media/3mfxH0nbfVFLt1gTpq/source.gif */
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+html {
+  box-sizing: border-box;
+}
+
+body{
+  margin:0;
+  background:white;
+}
+
+h1{
+  font-family: 'Lobster Two', cursive;
+  padding:5%;
+  text-align:center;
+  display:block;
+  font-size:4rem;
+  
+}
+.container{
+  /* background:#f8d404; */
+  height:80vh;
+  width:80vw;
+  margin:7.5% auto;
+  border-radius:25px;
+}
+
+.rightblock{
+/* background :Yellow; */
+align-items: center;
+}
+.container3{
+  margin: 15% auto;
+  margin-left:10%;
+  width:35vw;
+  height:60vh;
+  background: url('./yelbot.gif');
+  background-repeat:no-repeat;
+  padding:3%;
+}
+.leftblock{
+
+}
+
+.container2{
+  width:35vw;
+  height:60vh;
+  margin: 15% auto;
+  /* background:#f8d404;  */
+  border-radius:20px;
+  padding:3%;
+  box-shadow:2px 2px 20px 10px rgba(0,0,0,0.2);
+
+}
+
+input{
+  width: 90%;
+  height:50px;
+  margin:auto 5%;
+  cursor:pointer;
+  outline:none;
+  border:none;
+  border-radius:15px 15px 0px 0px;
+  box-shadow:2px 2px 20px 5px rgba(0,0,0,0.2);
+  font-family:'Courier New', Courier, monospace;
+  font-size:16px;
+}
+#input{
+  padding-left:3%;
+}
+button{
+  cursor:pointer;
+  display:block;
+  margin:auto 5%;
+  width:90%;
+  height:50px;
+  font-family: 'Bebas Neue', cursive;
+  font-size:22px;
+  font-weight:700;
+  color:black;
+  background:#f8d404;
+  border:none;
+  border-radius:0px 0px 15px 15px;
+  box-shadow:2px 2px 20px 5px rgba(0,0,0,0.2)
+
+}
+
+button:hover{
+  filter:brightness(80%);
+}
+
+button:active{
+  transform:scale(0.98);
+}
+
+button:disabled{
+  cursor:default;
+  filter:brightness(30%);
+}
+
+
+
+  button{
+    box-shadow:5px 5px 20px 10px rgba(0,0,0,0.3)
+    }
+  
+
+
+/* Toggle voice selector css */
+.control-me::after {
+  content: "🙍Mary";
+  font-size: 2rem;
+  
+}
+#toggle:checked ~ .control-me::after {
+  content: "🤵Mike";
+}
+
+label {
+  background: #2196f3;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  color:white;
+  margin:2%;
+  box-shadow:3px 3px 20px 10px rgba(0,0,0,0.2);
+  padding:1%;
+ 
+}
+
+.visually-hidden {
+  position: absolute;
+  left: -100vw;
+}
+  .voiceselect{
+background:none;
+text-align: center;
+padding:5px;
+align-items:center;
+
+  }
+
+
+  /* Media query :tablet or smaller */
+@media screen and (max-width:1000px){
+  .container{
+    background-size:cover;
+    background-position:center center;
+  }
+}
